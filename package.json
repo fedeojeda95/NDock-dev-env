@@ -1,16 +1,21 @@
 {
-  "name": "dockertest",
+  "name": "ndock-dev-env",
+  "repository": {
+    "url": "https://github.com/fedeojeda95/NDock-dev-env"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ."
+    "start": "nodemon .",
+    "start-prod": "node ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
     "nodemon": "^1.12.1"
   }
 }
