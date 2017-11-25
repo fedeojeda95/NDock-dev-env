@@ -8,14 +8,24 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon .",
-    "start-prod": "node ."
+    "start-prod": "node .",
+    "test-unit": "NODE_ENV=test mocha 'tests/**/*.js'"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.0",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.22.15"
   },
   "devDependencies": {
-    "nodemon": "^1.12.1"
+    "chai": "^4.1.2",
+    "eslint": "^4.7.2",
+    "mocha": "^4.0.1",
+    "nodemon": "^1.12.1",
+    "sinon": "^4.1.2",
+    "sinon-chai": "^2.14.0"
   }
 }
