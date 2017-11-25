@@ -6,3 +6,12 @@ services:
       - ./:/app
     ports:
       - "8080:8080"
+    links:
+      - database
+  database:
+    image: postgres:10.1
+    environment:
+      POSTGRES_USER: todoapp
+      POSTGRES_PASSWORD: todoapp
+      POSTGRES_DB: todoapp
+    container_name: database
