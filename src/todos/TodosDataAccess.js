@@ -1,4 +1,3 @@
-const { Constants } = require('../common');
 const { Todo } = require('../database');
 
 class TodosDataAccess {

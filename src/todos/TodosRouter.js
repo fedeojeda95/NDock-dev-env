@@ -8,7 +8,6 @@ class TodosRouter {
   }
 
   getAllTodos(request, response) {
-    console.log(this);
     this.todosController.getAllTodos()
       .then(todos => {
         response.status(Constants.responseCodes.success).json({ todos });
@@ -20,8 +19,6 @@ class TodosRouter {
 
   createTodo(request, response) {
     const todo = request.body;
-    console.log("Todo");
-    console.log(todo);
     this.todosController.createTodo(todo)
       .then(() => {
         response.status(Constants.responseCodes.successNoResponse).send();
