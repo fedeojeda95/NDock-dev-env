@@ -24,3 +24,16 @@ The `docker-compose.yml` and `Dockerfile` expose the port 8080 and create a volu
 
 * `XXXX: 8080` below ports in `docker-compose.yml`. XXXX is the local machine port number that you want to use
 * ./:/app to change which folder will be set as a volume. `./` represents the root folder in your machine and `/app` represents the folder inside the container that will be set as a volume.
+
+## Dependencies
+
+### Production
+
+* sequelize: ORM to handle the database access independently of the database used
+* pg: adapter of postgress to be used with sequelize
+* express: almost de-facto for setting an API
+
+### Development
+
+* chai, mocha and sinoi: one of the best combinations for testing a node.js application
+* nodemon: To make the development experience better, it restarts the server anytime a field is changed.
