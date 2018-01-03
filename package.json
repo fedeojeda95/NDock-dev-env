@@ -9,7 +9,7 @@
   "scripts": {
     "start": "nodemon .",
     "start-prod": "node .",
-    "test-unit": "NODE_ENV=test mocha 'tests/**/*.js'"
+    "test": "NODE_ENV=test mocha 'tests/**/*.js'"
   },
   "author": "",
   "license": "ISC",
